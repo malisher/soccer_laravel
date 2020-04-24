@@ -160,11 +160,9 @@
                                                 <div class="picture"><img
                                                         src="/sites/all/themes/newtheme/images/comment_no_picture.png"/>
                                                 </div>
-                                                <div class="comment-body">
-                                                    <div><a class="ctools-use-modal" href="/login">Авторизуйтесь</a>,
-                                                        чтобы оставить свой комментарий
-                                                    </div>
-                                                </div>
+			<div>
+				@comments(['model' => $blog])
+			</div>
                                                 <div class="button-submit">Отправить</div>
                                             </div>
                                             <div class="block block-block">
