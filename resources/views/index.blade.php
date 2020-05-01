@@ -2,6 +2,21 @@
 
 @section('main')
 
+	<link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+
+	<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+     controls preload="auto" height="600" width="980">
+
+        <source src="{{url($video ?? '')}}" type="{{$mime ?? ''}}" />
+    </video>
+
+	<script src="//vjs.zencdn.net/4.12/video.js"></script>
+
+	<script>
+	videojs(document.getElementById('example_video_1'), {}, function() {
+	});
+    </script>
+
     <div id="main_body">
         <div id="left" class="sidebar">
             <div class="region region-left">
@@ -114,6 +129,9 @@
                     </div>
                 </div>
             </div> <!-- /#center -->
+			
+			
+			
             <div id="bottom_block">
                 <div class="read-more-wrapp">
                 </div>
